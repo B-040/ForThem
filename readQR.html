@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="https://webqr.com/llqrcode.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Home | ForYou</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet"> 
+    <link href="css/lightbox.css" rel="stylesheet"> 
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+        <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+</head><!--/head-->
+
+<body>
+    <header id="header">      
+        
+                
+                    
+
+                    <a  href="index.php">
+                       <br><center><h1><img src="loogoo.png" alt="logo" width="456" high="99"></h1></center>
+                    </a>
+                    
+                </div>
+                <div id="qrcodescanner"></div>
+    <div id="message"></div>
+  </body>
+  <script>
+window.onload = function() {
+  QRCodeScanner({
+    element: document.getElementById('qrcodescanner'),
+    width: 400,
+    height: 300,
+    onScanSuccess: function(result) {
+      console.log('Scan Success', result);
+      document.getElementById('message').textContent = result;
+    },
+    onScanError: function(error) {
+      console.log('Scan Error', error);
+      document.getElementById('message').textContent = 'No QR Code found';
+    }
+  });
+}
+  </script>
+
+    </header>
+    <!--/#header-->
+
+    <section id="home-slider">
+        <div class="container">
+            <div class="row">
+                <div class="main-slider">
+                 <br> <center><center><center><center><a href="if.php" class="btn btn-common">Next</a></center>    <center><center><center><center><a href="index.php" class="btn btn-common">Retake A Picture</a></center>
+                    <div class="slide-text">
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="preloader"><i class="fa fa-sun-o fa-spin"></i></div>
+    </section>
+
+    
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/lightbox.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>   
+</body>
+</html>
+
